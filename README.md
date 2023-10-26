@@ -3,4 +3,4 @@
 
  Estou aprendendo a criar SITES
 
-<a href="21vito.github.io/cev-html-css/exercicios/ex016/index.html">Abrir o ex016</a>
+<a href="https://21vito.github.io/cev-html-css/exercicios/ex016/index.html">Abrir o ex016</a>
