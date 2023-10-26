@@ -1,0 +1,140 @@
+/*
+!!!!!!
+HMTL = ID
+CSS  = #  
+   
+HTML = class
+CSS  = . 
+
+HTML = pseudoclass
+CSS = :
+!!!!!!
+*/
+
+/* IMPORTANDO UMA FONTE EXTERNA */
+@import url('https://fonts.googleapis.com/css2?family=Rosarivo&display=swap');
+
+/* IMPORTANDO UMA FONTE INTERNA DO COMPUTADOR */
+@font-face {
+    font-family: DS;
+    src: url('fontes/trajan-regular.ttf'), url('fontes/trajan-bold.ttf');
+}
+
+a {
+    color: rgb(255, 153, 0);
+    background-color: rgb(83, 78, 58);
+    border: 2px solid rgb(0, 0, 0);
+    text-decoration: underline;
+
+    /*PADDING =  DISTANCIA ENTRE CONTEUDO E BORDA */
+    padding: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+    background-color: rgb(255, 153, 0);
+    color: rgb(83, 78, 58);
+
+}
+
+/* UTILIZANDO A DIV: HOVER PARA ESCONDER E MOSTRAR BLOCOS QUANDO REQUISITADOS ------------]*/
+div > .hidden {
+    display: none;
+}
+/* TODOS OS ELEMENTOS QUE ESTEJAM NA CLASSE: "hidden" E ESTIVEREM DENTRO DE UM DIV VÃO SOFRER ESSAS CONDIÇÕES DE SEREM ESCONDIDOS */
+
+div:hover > .hidden {
+    display: block;
+} 
+/* ------------------------------------------------]*/
+
+body {
+    
+    /* DETERMINANDO O GRADIENTE DE CORES QUE IRÁ COMPOR O FUNDO */
+    background-image:linear-gradient(to right, #EDD749, #ebaf54,  #A63C06);
+    background-attachment: fixed;
+    font-size: 20px;
+    font-family: 'DS', serif;
+} 
+
+main {
+
+    /* ADICIONANDO UM QUADRO ONDE TODO O CONTEUDO ESTARÁ */
+    background-color:rgb(231, 216, 153)  ; 
+
+    /* LARGURA */
+    width: 600px; 
+
+    /* ALTURA */
+    padding: 10px;
+    
+    /* AONDE FICARÁ A MARGEM DO QUADRO (AUTO = AUTO-CENTRALIZAR*/
+    margin: auto;
+
+    /* O QUÃO CURVADA SERÁ A BORDA */
+    border-radius: 20px;
+
+    /* A SOMBRA DO QUADRO */
+    box-shadow: 5px 5px 15px #191f2074;
+
+    /* A POSIÇÃO DO QUADRO E DO CONTEUDO */
+    text-align: center;
+
+    /* UTILIZA A FONTE ROSARIVO COMO PADRÃO DO BODY */
+    font-family: Rosarivo;
+
+    /* ADD UMA BORDA EM TORNO DO QUADRO */
+    border: 1px groove black;
+    
+}
+
+/* DEFINIÇÕES PADRÃO DO h1 */
+h1 {color: rgb(0, 0, 0);}
+
+/* DEFINIÇÕES PADRÃO DO h2 */
+h2 {color: rgb(0, 0, 0);}
+
+/* DEFINIÇÕES PADRÃO DO p */
+p { 
+    color: rgb(255, 153, 0);
+    text-align: justify;
+}
+
+ul {
+    margin-top: 5px;
+    padding-top: 5px;    
+}
+
+/* !!!MARCADOR DE TEXTO!!! */
+mark{background-color: rgb(243, 119, 108);}    
+
+/* CLASSES ------------------------------------------------]*/
+
+/* CLASSE TITULO PRINCIPAL */
+.ttl {
+    font-size: 2em;
+    font-family: DS;
+}
+
+/* CLASSE TITULO SECUNDARIO */
+.ttl2 {
+    font-family: DS;
+    font-size: 25px;
+}
+
+/* CLASSE PARAGRAFO */
+.txto {
+    color: rgb(255, 153, 0);
+    background-color: rgb(83, 78, 58);
+    border: 5px groove rgb(0, 0, 0);
+    padding: 10px;
+    margin: auto;
+}
+
+/* 
+PALETA:
+#EDD749 
+#EBAF54 
+#A63C06 
+#710000
+#1A181B

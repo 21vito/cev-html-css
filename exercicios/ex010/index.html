@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias</title>
+</head>
+
+<body>
+    <h1>Trabalhando com midias</h1>
+    <p>Demonstrando o dinamismo de imagem no html</p>
+
+        <!--ALTERANDO A PROPORÇÃO DE MANEIRA DINAMICA NO SITE USANDO A TAG PICTURE-->
+    <picture>
+
+        <!--ESTABELECENDO A CONDIÇÃO PARA A PEQUENA FOTO-->
+        <source media="(max-width: 750px)" srcset="imagens/Imagem_P.png" type="image/png">
+
+        <!--ESTABELECENDO A CONDIÇÃO PARA A FOTO MEDIA-->
+        <source media="(max-width: 1050px)" srcset="imagens/imagem_M.png" type="image/png">
+
+        <!--ESTEBELECENDO A FOTO GRANDE COMO PADRÃO-->
+        <img src="imagens/Imagem_G.png" alt="G">
+
+    </picture>
+
+    <img src="imagens/sadesponga.jpg" alt="">
+
+    <h1>Audio do bob esponga</h1>
+
+    <!--INSERINDO O AUDIO NO SITE COM CONTROLES E EM LOOP-->
+    <audio preload="metadata" controls loop>
+        <source src="midia/Spongebob Sad - Sound Effect(HD) (320 kbps).mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+</html>

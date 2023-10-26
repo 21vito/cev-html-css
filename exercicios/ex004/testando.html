@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    .indent-1 {float: left;}
+    .indent-1 section {width: 50%; float: left;}
+
+.flex-child {
+    flex: 1;
+    border: 2px solid yellow;
+}  
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+    </style>
+
+</head>
+<section class="indent-1">
+    <!-- Section 1 --> 
+    <section>
+        <div>Some content 1</div>
+        <div>Some more 1</div>
+    </section>
+
+    <!-- Section 2 -->
+    <section>
+        <div>Some content 2</div>
+        <div>Some more 2</div>
+    </section>
+</section>  
+</body>
+</html>
